@@ -11,7 +11,7 @@ elementUl.classList.add(
   'flex-wrap',
   'gap-20',
   'list-style-none',
-  'dimentions'
+  'dimensions'
 );
 
 for (let i = 1; i <= 100; i++) {
