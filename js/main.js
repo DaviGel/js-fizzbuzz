@@ -16,7 +16,7 @@ elementUl.classList.add(
 
 for (let i = 1; i <= 100; i++) {
   const elementLi = document.createElement('li');
-  elementLi.classList.add('element-display-flex');
+  elementLi.classList.add('element-align');
   if (i % 3 === 0 && i % 5 !== 0) {
     console.log(fizz);
     elementLi.append(fizz);
