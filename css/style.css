@@ -16,6 +16,7 @@ body .container {
 h1 {
   text-align: center;
   color: #fff;
+  font-size: 48px;
 }
 
 body #list {
