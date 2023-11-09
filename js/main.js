@@ -17,22 +17,20 @@ elementUl.classList.add(
 for (let i = 1; i <= 100; i++) {
   const elementLi = document.createElement('li');
   elementLi.classList.add('element-align');
+  let value = i;
   if (i % 3 === 0 && i % 5 === 0) {
-    console.log(fizzbuzz);
-    elementLi.append(fizzbuzz);
+    value = 'fizzbuzz';
     elementLi.classList.add('bg-fizzbuzz');
   } else if (i % 5 === 0) {
-    console.log(buzz);
-    elementLi.append(buzz);
+    value = 'buzz';
     elementLi.classList.add('bg-buzz');
   } else if (i % 3 === 0) {
-    console.log(fizz);
-    elementLi.append(fizz);
+    value = 'fizz';
     elementLi.classList.add('bg-fizz');
   } else {
-    console.log(i);
-    elementLi.append(i);
     elementLi.classList.add('bg-element');
   }
+  console.log(value);
+  elementLi.append(value);
   elementUl.append(elementLi);
 }
